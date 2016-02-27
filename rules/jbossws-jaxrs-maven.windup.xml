@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<ruleset id="resteasy-to-jboss-jaxrs"
+    xmlns="http://windup.jboss.org/schema/jboss-ruleset"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://windup.jboss.org/schema/jboss-ruleset http://windup.jboss.org/schema/jboss-ruleset/windup-jboss-ruleset.xsd">
+    
+  <metadata>
+    <description>
+        RestEasy maven archives jbossws-jaxrs replacement archives.
+    </description>
+  </metadata>
+
+  <rules id="mvn"> 
+  
+    <rule id="mvn_pom-config-1">
+      <when>
+        <project>
+            <artifact groupId="org.jboss.resteasy" artifactId="resteasy-jaxrs"/>
+        </project>
+      </when>
+      <perform>
+        <lineitem message="Maven archive org.jboss.resteasy:resteasy-jaxrs found.  It must be replaced with org.jbossws:jbossws-jaxrs." />
+      </perform>      
+    </rule>
+    
+    <rule id="mvn_pom-config-2">
+      <when>
+        <project>
+            <artifact groupId="org.jboss.resteasy" artifactId="resteasy-crypto"/>
+        </project>
+      </when>
+      <perform>
+        <lineitem message="Maven archive org.jboss.resteasy:resteasy-crypto found.  It must be replaced with org.jbossws:TO-BE-IDed." />
+      </perform>      
+    </rule>
+    
+    <rule id="mvn_pom-config-3">
+      <when>
+        <project>
+            <artifact groupId="org.jboss.resteasy" artifactId="resteasy-client"/>
+        </project>
+      </when>
+      <perform>
+        <lineitem message="Maven archive org.jboss.resteasy:resteasy-client found.  It must be replaced with org.jbossws:TO-BE-IDed." />
+      </perform>      
+    </rule>
+    
+    <rule id="mvn_pom-config-4">
+      <when>
+        <project>
+            <artifact groupId="org.jboss.resteasy" artifactId="resteasy-jaxb-provider"/>
+        </project>
+      </when>
+      <perform>
+        <lineitem message="Maven archive org.jboss.resteasy:resteasy-jaxb-provider found.  It must be replaced with org.jbossws:TO-BE-IDed." />
+      </perform>      
+    </rule>
+     
+    <rule id="mvn_pom-config-5">
+      <when>
+        <project>
+            <artifact groupId="org.jboss.resteasy" artifactId="resteasy-jsapi"/>
+        </project>
+      </when>
+      <perform>
+        <lineitem message="Maven archive org.jboss.resteasy:resteasy-jsapi found.  It must be replaced with org.jbossws:TO-BE-IDed." />
+      </perform>      
+    </rule>
+     
+    <rule id="mvn_pom-config-6">
+      <when>
+        <project>
+            <artifact groupId="org.jboss.resteasy" artifactId="resteasy-guice"/>
+        </project>
+      </when>
+      <perform>
+        <lineitem message="Maven archive org.jboss.resteasy:resteasy-guice found.  It must be replaced with org.jbossws:TO-BE-IDed." />
+      </perform>      
+    </rule>
+    
+    <rule id="mvn_pom-config-7">
+      <when>
+        <project>
+            <artifact groupId="org.jboss.resteasy" artifactId="jose-jwt"/>
+        </project>
+      </when>
+      <perform>
+        <lineitem message="Maven archive org.jboss.resteasy:jose-jwt found.  It must be replaced with org.jbossws:TO-BE-IDed." />
+      </perform>      
+    </rule>
+    
+    <rule id="mvn_pom-config-8">
+      <when>
+        <project>
+            <artifact groupId="org.jboss.resteasy" artifactId="resteasy-jettison-provider"/>
+        </project>
+      </when>
+      <perform>
+        <lineitem message="Maven archive org.jboss.resteasy:resteasy-jettison-provider found.  It must be replaced with org.jbossws:TO-BE-IDed." />
+      </perform>      
+    </rule>
+    
+    <rule id="mvn_pom-config-9">
+      <when>
+        <project>
+            <artifact groupId="org.jboss.resteasy" artifactId="async-http-servlet-3.0"/>
+        </project>
+      </when>
+      <perform>
+        <lineitem message="Maven archive org.jboss.resteasy:async-http-servlet-3.0 found.  It must be replaced with org.jbossws:TO-BE-IDed." />
+      </perform>      
+    </rule>
+    
+    <rule id="mvn_pom-config-10">
+      <when>
+        <project>
+            <artifact groupId="org.jboss.resteasy" artifactId="resteasy-jackson2-provider"/>
+        </project>
+      </when>
+      <perform>
+        <lineitem message="Maven archive org.jboss.resteasy:resteasy-jackson2-provider found.  It must be replaced with org.jbossws:TO-BE-IDed." />
+      </perform>      
+    </rule>
+    
+    <rule id="mvn_pom-config-11">
+      <when>
+        <project>
+            <artifact groupId="org.jboss.resteasy" artifactId="resteasy-servlet-initializer"/>
+        </project>
+      </when>
+      <perform>
+        <lineitem message="Maven archive org.jboss.resteasy:resteasy-servlet-initializer found.  It must be replaced with org.jbossws:TO-BE-IDed." />
+      </perform>      
+    </rule>
+    
+    <rule id="mvn_pom-config-12">
+      <when>
+        <project>
+            <artifact groupId="org.jboss.resteasy" artifactId="resteasy-oauth"/>
+        </project>
+      </when>
+      <perform>
+        <lineitem message="Maven archive org.jboss.resteasy:resteasy-oauth found.  It must be replaced with org.jbossws:TO-BE-IDed." />
+      </perform>      
+    </rule>
+    
+    <rule id="mvn_pom-config-13">
+      <when>
+        <project>
+            <artifact groupId="org.jboss.resteasy" artifactId="skeleton-key-core"/>
+        </project>
+      </when>
+      <perform>
+        <lineitem message="Maven archive org.jboss.resteasy:skeleton-key-core found.  It must be replaced with org.jbossws:TO-BE-IDed." />
+      </perform>      
+    </rule>
+    
+    <rule id="mvn_pom-config-14">
+      <when>
+        <project>
+            <artifact groupId="org.jboss.resteasy" artifactId="resteasy-jackson-provider"/>
+        </project>
+      </when>
+      <perform>
+        <lineitem message="Maven archive org.jboss.resteasy:resteasy-jackson-provider found.  It must be replaced with org.jbossws:TO-BE-IDed." />
+      </perform>      
+    </rule>
+    
+    <rule id="mvn_pom-config-15">
+      <when>
+        <project>
+            <artifact groupId="org.jboss.resteasy" artifactId="resteasy-spring"/>
+        </project>
+      </when>
+      <perform>
+        <lineitem message="Maven archive org.jboss.resteasy:resteasy-spring found.  It must be replaced with org.jbossws:TO-BE-IDed." />
+      </perform>      
+    </rule>
+    
+    <rule id="mvn_pom-config-16">
+      <when>
+        <project>
+            <artifact groupId="org.jboss.resteasy" artifactId="resteasy-wadl"/>
+        </project>
+      </when>
+      <perform>
+        <lineitem message="Maven archive org.jboss.resteasy:resteasy-wadl found.  It must be replaced with org.jbossws:TO-BE-IDed." />
+      </perform>      
+    </rule>
+    
+  </rules>
+</ruleset>

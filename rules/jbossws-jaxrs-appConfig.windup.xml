@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<ruleset id="appConfig"
+    xmlns="http://windup.jboss.org/schema/jboss-ruleset"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://windup.jboss.org/schema/jboss-ruleset http://windup.jboss.org/schema/jboss-ruleset/windup-jboss-ruleset.xsd">
+    
+  <metadata>
+    <description>
+        RestEasy maven archives jbossws-jaxrs replacement archives.
+    </description>
+  </metadata>
+
+  <rules> 
+    <!-- jboss-web.xml -->
+    <rule id="jboss-web-1">
+      <when>
+        <filecontent pattern="org.jboss.resteasy.skeleton.key.as7.OAuthManagedResourceValve" filename="jboss-web.xml" />
+      </when>
+      <perform>
+        <hint title="RestEasy OAuthManagedResourceValve" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+  
+    <rule id="jboss-web-2">
+      <when>
+        <filecontent pattern="org.jboss.resteasy.skeleton.key.as7.BearerTokenAuthenticatorValve" filename="jboss-web.xml" />
+      </when>
+      <perform>
+        <hint title="RestEasy BearerTokenAuthenticatorValve" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    
+   <!-- web.xml -->
+    <rule id="web-app-10">
+      <when>
+        <filecontent pattern="org.jboss.resteasy.security.doseta.KeyRepository" filename="web.xml" />
+      </when>
+      <perform>
+        <hint title="RestEasy KeyRepository" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    
+    <rule id="web-app-11">
+      <when>
+        <filecontent pattern="org.jboss.resteasy.security.doseta.ConfiguredDosetaKeyRepository" filename="web.xml" />
+      </when>
+      <perform>
+        <hint title="RestEasy ConfiguredDosetaKeyRepository" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    
+    <rule id="web-app-12">
+      <when>
+        <filecontent pattern="org.jboss.resteasy.examples.oauth.OAuthApplication" filename="web.xml" />
+      </when>
+      <perform>
+        <hint title="RestEasy OAuthApplication" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+     
+    <rule id="web-app-13">
+      <when>
+        <filecontent pattern="org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher" filename="web.xml" />
+      </when>
+      <perform>
+        <hint title="RestEasy HttpServletDispatcher" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+     
+    <rule id="web-app-14">
+      <when>
+        <filecontent pattern="org.jboss.resteasy.plugins.server.servlet.HttpServlet30Dispatcher" filename="web.xml" />
+      </when>
+      <perform>
+        <hint title="RestEasy HttpServlet30Dispatcher" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+      
+    <rule id="web-app-15">
+      <when>
+        <filecontent pattern="org.jboss.resteasy.jsapi.JSAPIServlet" filename="web.xml" />
+      </when>
+      <perform>
+        <hint title="RestEasy JSAPIServlet" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+        
+    <rule id="web-app-16">
+      <when>
+        <filecontent pattern="org.jboss.resteasy.auth.oauth.OAuthServlet" filename="web.xml" />
+      </when>
+      <perform>
+        <hint title="RestEasy OAuthServlet" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+        
+    <rule id="web-app-17">
+      <when>
+        <filecontent pattern="org.jboss.resteasy.plugins.server.servlet.ResteasyBootstrap" filename="web.xml" />
+      </when>
+      <perform>
+        <hint title="RestEasy ResteasyBootstrap" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule> 
+        
+    <rule id="web-app-18">
+      <when>
+        <filecontent pattern="org.jboss.resteasy.plugins.guice.GuiceResteasyBootstrapServletContextListener" filename="web.xml" />
+      </when>
+      <perform>
+        <hint title="RestEasy GuiceResteasyBootstrapServletContextListener" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+       
+    <rule id="web-app-19">
+      <when>
+        <filecontent pattern="org.jboss.resteasy.plugins.spring.SpringContextLoaderListener" filename="web.xml" />
+      </when>
+      <perform>
+        <hint title="RestEasy SpringContextLoaderListener" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule> 
+           
+  </rules>
+</ruleset>

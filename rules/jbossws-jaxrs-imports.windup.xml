@@ -1,0 +1,779 @@
+<?xml version="1.0"?>
+<ruleset id="resteasy-package-imports"
+    xmlns="http://windup.jboss.org/schema/jboss-ruleset"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://windup.jboss.org/schema/jboss-ruleset http://windup.jboss.org/schema/jboss-ruleset/windup-jboss-ruleset.xsd">
+    
+  <metadata>
+    <description>
+        RestEasy import statements and jbossws-jaxrs replacements.
+    </description>
+  </metadata>
+
+  <rules id="imp"> 
+    <!-- cdi replacements -->
+    <rule id="imp_import-1">
+      <when>
+        <javaclass references="org.jboss.resteasy.cdi.ResteasyCdiExtension" />
+      </when>
+      <perform>
+        <hint title="RestEasy cdi packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                Replace this package with org.jboss.wsf.stack.cxf.cdi.JaxRsCdiExtension
+                Class in maven archive
+                    <groupId>org.jboss.ws.cxf</groupId>
+                    <artifactId>jbossws-cxf-jaxrs-cdi</artifactId>
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    
+   <rule id="imp_import-2">
+      <when>
+        <javaclass references="org.jboss.resteasy.cdi.JaxrsAnnotatedType" />
+      </when>
+      <perform>
+        <hint title="RestEasy cdi packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                Replace this package with org.jboss.wsf.stack.cxf.cdi.JaxrsAnnotatedType
+                Class in maven archive
+                    <groupId>org.jboss.ws.cxf</groupId>
+                    <artifactId>jbossws-cxf-jaxrs-cdi</artifactId>
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+   <rule id="imp_import-3">
+      <when>
+        <javaclass references="org.jboss.resteasy.cdi.Utils" />
+      </when>
+      <perform>
+        <hint title="RestEasy cdi packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                Replace this package with org.jboss.wsf.stack.cxf.cdi.Utils
+                Class in maven archive
+                    <groupId>org.jboss.ws.cxf</groupId>
+                    <artifactId>jbossws-cxf-jaxrs-cdi</artifactId>
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+   <rule id="imp_import-4">
+      <when>
+        <javaclass references="org.jboss.resteasy.cdi.CdiConstructorInjector" />
+      </when>
+      <perform>
+        <hint title="RestEasy cdi packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                Replace this package with org.jboss.wsf.stack.cxf.cdi.    TODO
+                Class in maven archive
+                    <groupId>org.jboss.ws.cxf</groupId>
+                    <artifactId>jbossws-cxf-jaxrs-cdi</artifactId>
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+   <rule id="imp_import-5">
+      <when>
+        <javaclass references="org.jboss.resteasy.cdi.CdiInjectorFactory" />
+      </when>
+      <perform>
+        <hint title="RestEasy cdi packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                Replace this package with org.jboss.wsf.stack.cxf.cdi.    TODO
+                Class in maven archive
+                    <groupId>org.jboss.ws.cxf</groupId>
+                    <artifactId>jbossws-cxf-jaxrs-cdi</artifactId>
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+   <rule id="imp_import-6">
+      <when>
+        <javaclass references="org.jboss.resteasy.cdi.CdiPropertyInjector" />
+      </when>
+      <perform>
+        <hint title="RestEasy cdi packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                Replace this package with org.jboss.wsf.stack.cxf.cdi.    TODO
+                Class in maven archive
+                    <groupId>org.jboss.ws.cxf</groupId>
+                    <artifactId>jbossws-cxf-jaxrs-cdi</artifactId>
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+   <rule id="imp_import-7">
+      <when>
+        <javaclass references="org.jboss.resteasy.cdi.JaxrsInjectionTarget" />
+      </when>
+      <perform>
+        <hint title="RestEasy cdi packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                Replace this package with org.jboss.wsf.stack.cxf.cdi.    TODO
+                Class in maven archive
+                    <groupId>org.jboss.ws.cxf</groupId>
+                    <artifactId>jbossws-cxf-jaxrs-cdi</artifactId>
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    
+    <!-- validation classes -->
+    <rule id="imp_import-100">
+      <when>
+        <javaclass references="org.jboss.resteasy.api.validation.{*}" />
+      </when>
+      <perform>
+        <hint title="RestEasy validation packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-101">
+      <when>
+        <javaclass references="org.jboss.resteasy.plugins.validation.{*}" />
+      </when>
+      <perform>
+        <hint title="RestEasy validation packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+  
+    <!-- jaxb-provider -->
+    <rule id="imp_import-201">
+      <when>
+        <javaclass references="org.jboss.resteasy.annotations.providers.jaxb.{*}" />
+      </when>
+      <perform>
+        <hint title="RestEasy jaxb provider packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-202">
+      <when>
+        <javaclass references="org.jboss.resteasy.plugins.providers.jaxb.{*}" />
+      </when>
+      <perform>
+        <hint title="RestEasy jaxb provider packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-203">
+      <when>
+        <javaclass references="org.jboss.resteasy.plugins.stats.{*}" />
+      </when>
+      <perform>
+        <hint title="RestEasy jaxb provider packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    
+    <!-- atom-provider -->
+       <rule id="imp_import-300">
+      <when>
+        <javaclass references="org.jboss.resteasy.plugins.providers.atom.{*}" />
+      </when>
+      <perform>
+        <hint title="RestEasy atom provider packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    
+    <!-- client   TODO fix duplicate ref -->
+    <rule id="imp_import-400">
+      <when>
+        <javaclass references="org.jboss.resteasy.client.jaxrs.engines.{*}" />
+      </when>
+      <perform>
+        <hint title="RestEasy client packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-401">
+      <when>
+        <javaclass references="org.jboss.resteasy.client.jaxrs.internal.proxy.extractors.{*}" />
+      </when>
+      <perform>
+        <hint title="RestEasy client packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-402">
+      <when>
+        <javaclass references="org.jboss.resteasy.client.jaxrs.internal.proxy.processors.{*}" />
+      </when>
+      <perform>
+        <hint title="RestEasy client packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-403">
+      <when>
+        <javaclass references="org.jboss.resteasy.client.jaxrs.internal.proxy.{*}" />
+      </when>
+      <perform>
+        <hint title="RestEasy client packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-404">
+      <when>
+        <javaclass references="org.jboss.resteasy.client.jaxrs.internal.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy client packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-405">
+      <when>
+        <javaclass references="org.jboss.resteasy.client.jaxrs.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy client packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    
+    <!-- async-http-servlet -->
+    <rule id="imp_import-500">
+      <when>
+        <javaclass references="org.jboss.resteasy.plugins.server.servlet.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy async http servlet packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+     
+      <!-- resteasy-jaxrs -->
+    <rule id="imp_import-600">
+      <when>
+        <javaclass references="org.jboss.resteasy.util.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy jaxrs packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-601">
+      <when>
+        <javaclass references="org.jboss.resteasy.test.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy jaxrs packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-602">
+      <when>
+        <javaclass references="org.jboss.resteasy.spi.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy jaxrs packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-603">
+      <when>
+        <javaclass references="org.jboss.resteasy.specimpl.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy jaxrs packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-604">
+      <when>
+        <javaclass references="org.jboss.resteasy.plugins.server.tjws.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy jaxrs packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-605">
+      <when>
+        <javaclass references="org.jboss.resteasy.plugins.server.servlet.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy jaxrs packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-606">
+      <when>
+        <javaclass references="org.jboss.resteasy.plugins.server.resourcefactory.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy jaxrs packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-607">
+      <when>
+        <javaclass references="org.jboss.resteasy.plugins.server.embedded.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy jaxrs packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>  
+    <rule id="imp_import-608">
+      <when>
+        <javaclass references="org.jboss.resteasy.plugins.server.BaseHttpRequest" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy jaxrs packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule> 
+    <rule id="imp_import-609">
+      <when>
+        <javaclass references="org.jboss.resteasy.plugins.providers.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy jaxrs packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>  
+    <rule id="imp_import-610">
+      <when>
+        <javaclass references="org.jboss.resteasy.plugins.interceptors.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy jaxrs packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule> 
+    <rule id="imp_import-611">
+      <when>
+        <javaclass references="org.jboss.resteasy.plugins.delegates.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy jaxrs packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-612">
+      <when>
+        <javaclass references="org.jboss.resteasy.mock.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy jaxrs packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-613">
+      <when>
+        <javaclass references="org.jboss.resteasy.logging.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy jaxrs packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-614">
+      <when>
+        <javaclass references="org.jboss.resteasy.core.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy jaxrs packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-615">
+      <when>
+        <javaclass references="org.jboss.resteasy.client.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy jaxrs packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-616">
+      <when>
+        <javaclass references="org.jboss.resteasy.api.validation.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy jaxrs packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    
+    <!-- resteasy-spring -->
+    <rule id="imp_import-700">
+      <when>
+        <javaclass references="org.jboss.resteasy.client.spring.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy spring packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-701">
+      <when>
+        <javaclass references="org.jboss.resteasy.springmvc.annotation.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy spring packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-702">
+      <when>
+        <javaclass references="org.jboss.resteasy.springmvc.tjws.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy spring packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-703">
+      <when>
+        <javaclass references="org.jboss.resteasy.springmvc.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy spring packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    
+    <!-- resteasy-crypto -->
+      <rule id="imp_import-800">
+      <when>
+        <javaclass references="org.jboss.resteasy.annotations.security.doseta.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy crypto packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-801">
+      <when>
+        <javaclass references="org.jboss.resteasy.security.doseta.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy crypto packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-801">
+      <when>
+        <javaclass references="org.jboss.resteasy.security.smime.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy crypto packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-802">
+      <when>
+        <javaclass references="org.jboss.resteasy.security.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy resteasy crypto packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    
+    <!-- jettison-provider -->
+    <rule id="imp_import-900">
+      <when>
+        <javaclass references="org.jboss.resteasy.annotations.providers.jaxb.json.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy jettison provider packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-901">
+      <when>
+        <javaclass references="org.jboss.resteasy.plugins.providers.jaxb.json.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy jettison provider packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    
+    <!-- json-p-provider -->
+    <rule id="imp_import-1000">
+      <when>
+        <javaclass references="org.jboss.resteasy.plugins.providers.jsonp.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy json-p provider packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    
+    <!-- multipart-provider -->
+    <rule id="imp_import-1100">
+      <when>
+        <javaclass references="org.jboss.resteasy.annotations.providers.multipart.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy multipart provider packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-1101">
+      <when>
+        <javaclass references="org.jboss.resteasy.plugins.providers.multipart.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy multipart provider packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+     
+    <!-- jackson-provider -->
+    <rule id="imp_import-1200">
+      <when>
+        <javaclass references="org.jboss.resteasy.plugins.providers.jackson.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy jackson provider packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-1201">
+      <when>
+        <javaclass references="org.jboss.resteasy.annotations.providers.NoJackson" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy jackson provider packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+     
+    <!-- jose-jwt -->
+    <rule id="imp_import-1300">
+      <when>
+        <javaclass references="org.jboss.resteasy.jose.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy jose-jwt packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-1301">
+      <when>
+        <javaclass references="org.jboss.resteasy.jwt.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy jose-jwt packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    
+    <!-- jsapi -->
+    <rule id="imp_import-1400">
+      <when>
+        <javaclass references="org.jboss.resteasy.jsapi.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy jsapi packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    
+    <!-- yaml-provider -->
+    <rule id="imp_import-1400">
+      <when>
+        <javaclass references="org.jboss.resteasy.plugins.providers.YamlProvider" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy yaml provider packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    
+    <!-- jackson2-provider -->
+    <rule id="imp_import-1500">
+      <when>
+        <javaclass references="org.jboss.resteasy.plugins.providers.jackson.{*}" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy jackson2 provider packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-1501">
+      <when>
+        <javaclass references="org.jboss.resteasy.annotations.providers.jackson.Formatted" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy jackson2 provider packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    <rule id="imp_import-1502">
+      <when>
+        <javaclass references="org.jboss.resteasy.annotations.providers.NoJackson" />
+      </when>proxy
+      <perform>
+        <hint title="RestEasy jackson2 provider packages" effort="1" severity="mandatory">
+            <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>      
+    </rule>
+    
+  </rules>
+</ruleset>
