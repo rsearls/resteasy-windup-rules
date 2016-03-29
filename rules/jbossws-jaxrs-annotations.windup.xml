@@ -1,0 +1,806 @@
+<?xml version="1.0"?>
+<ruleset id="jaxrs-annotations"
+         xmlns="http://windup.jboss.org/schema/jboss-ruleset"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://windup.jboss.org/schema/jboss-ruleset http://windup.jboss.org/schema/jboss-ruleset/windup-jboss-ruleset.xsd">
+
+    <metadata>
+        <description>
+            RestEasy defined annotation usage search.
+        </description>
+    </metadata>
+
+
+    <rules id="jaxrs-annotation-rules">
+
+        <rule id="resteasy-ann-1">
+            <when>
+                <filecontent pattern="@Form"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @Form annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @Form must be removed. It can be
+                            replaced with Apache CXF's implementation of a like feature.
+                        </message>
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-5">
+            <when>
+                <filecontent pattern="@Query"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @Query annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @Query must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-6">
+            <when>
+                <filecontent pattern="@ClientResponseType"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @ClientResponseType annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @ClientResponseType must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-7">
+            <when>
+                <filecontent pattern="@Status"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @Status annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @Status must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-8">
+            <when>
+                <filecontent pattern="@GZIP"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @GZIP annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @GZIP must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-9">
+            <when>
+                <filecontent pattern="@LinkHeaderParam"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @LinkHeaderParam annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @LinkHeaderParam must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-10">
+            <when>
+                <filecontent pattern="@Body"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @Body annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @Body must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-11">
+            <when>
+                <filecontent pattern="@StringParameterUnmarshallerBinder"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @StringParameterUnmarshallerBinder annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @StringParameterUnmarshallerBinder must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-12">
+            <when>
+                <filecontent pattern="@Suspend"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @Suspend annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @Suspend must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-14">
+            <when>
+                <filecontent pattern="@Cache"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @Cache annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @Cache must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-15">
+            <when>
+                <filecontent pattern="@NoCache"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @NoCache annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @NoCache must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-16">
+            <when>
+                <filecontent pattern="@ImageWriterParams"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @ImageWriterParams annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @ImageWriterParams must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-17">
+            <when>
+                <filecontent pattern="@Precedence"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @Precedence annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @Precedence must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-18">
+            <when>
+                <filecontent pattern="@SecurityPrecedence"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @SecurityPrecedence annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @SecurityPrecedence must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-19">
+            <when>
+                <filecontent pattern="@HeaderDecoratorPrecedence"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @HeaderDecoratorPrecedence annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @HeaderDecoratorPrecedence must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-20">
+            <when>
+                <filecontent pattern="@DecoderPrecedence"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @DecoderPrecedence annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @DecoderPrecedence must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-21">
+            <when>
+                <filecontent pattern="@ClientInterceptor"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @ClientInterceptor annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @ClientInterceptor must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-22">
+            <when>
+                <filecontent pattern="@RedirectPrecedence"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @RedirectPrecedence annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @RedirectPrecedence must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-23">
+            <when>
+                <filecontent pattern="@EncoderPrecedence"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @EncoderPrecedence annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @EncoderPrecedence must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-24">
+            <when>
+                <filecontent pattern="@ServerInterceptor"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @ServerInterceptor annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @ServerInterceptor must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-25">
+            <when>
+                <filecontent pattern="@ContentEncoding"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @ContentEncoding annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @ContentEncoding must be removed. TBD
+                        </message>
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-26">
+            <when>
+                <filecontent pattern="@Decorator"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @Decorator annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @Decorator must be removed. It can be
+                            replaced with the Apache JAXBElementProvider facility.
+                        </message>
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-data-bindings.html#JAX-RSDataBindings-JAXBsupport"
+                            title="JAXBsupport"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/Built_in_JAXB_providers.html#decorators"
+                            title="JAXB Decorators"/>
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-27">
+            <when>
+                <filecontent pattern="@DecorateTypes"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @DecorateTypes annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @DecorateTypes must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-28">
+            <when>
+                <filecontent pattern="@Wrapped"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @Wrapped annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @Wrapped must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-29">
+            <when>
+                <filecontent pattern="@IgnoreMediaTypes"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @IgnoreMediaTypes annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @IgnoreMediaTypes must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-30">
+            <when>
+                <filecontent pattern="@JAXBConfig"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @JAXBConfig annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @JAXBConfig must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-31">
+            <when>
+                <filecontent pattern="@XmlHeader"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @XmlHeader annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @XmlHeader must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-32">
+            <when>
+                <filecontent pattern="@Stylesheet"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @Stylesheet annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @Stylesheet must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-33">
+            <when>
+                <filecontent pattern="@Formatted"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @Formatted annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @Formatted must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-34">
+            <when>
+                <filecontent pattern="@WrappedMap"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @WrappedMap annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @WrappedMap must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-35">
+            <when>
+                <filecontent pattern="@DoNotUseJAXBProvider"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @DoNotUseJAXBProvider annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @DoNotUseJAXBProvider must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-37">
+            <when>
+                <filecontent pattern="@Mapped"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @Mapped annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @Mapped must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-38">
+            <when>
+                <filecontent pattern="@BadgerFish"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @BadgerFish annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @BadgerFish must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+
+    </rules>
+</ruleset>

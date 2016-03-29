@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset id="appConfig"
+<ruleset id="jaxrs-appConfig"
     xmlns="http://windup.jboss.org/schema/jboss-ruleset"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://windup.jboss.org/schema/jboss-ruleset http://windup.jboss.org/schema/jboss-ruleset/windup-jboss-ruleset.xsd">
@@ -10,7 +10,7 @@
     </description>
   </metadata>
 
-  <rules> 
+  <rules id="jaxrs-appConfig-rules">
     <!-- jboss-web.xml -->
     <rule id="jboss-web-1">
       <when>
@@ -167,7 +167,60 @@
             ]]></message>
         </hint>
       </perform>      
-    </rule> 
-           
+    </rule>
+
+    <rule id="web-app-20">
+      <when>
+        <filecontent pattern="resteasy.media.type.mappings" filename="web.xml" />
+      </when>
+      <perform>
+        <iteration>
+          <hint title="RestEasy's media type mappings" effort="1"
+                severity="mandatory">
+            <message>
+              RESTEasy allows the user to map file name suffixes like (.xml, .txt)
+              to media types.  This mapping is declared in the application's
+              web.xml file.  Apache CXF supports this however the declaration uses
+              the param-name, jaxrs.extensions and uses a different format for param-value.
+              Refer to the document link for details
+
+            </message>
+            <link
+                href="http://cxf.apache.org/docs/jaxrs-services-configuration.html#JAXRSServicesConfiguration-ConfiguringJAX-RSservicesincontainerwithoutSpring"
+                title="Apache's jaxrs.extensions"/>
+            <link
+                href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/JAX-RS_Content_Negotiation.html"
+                title="RESTEasy's resteasy.media.type.mappings"/>
+          </hint>
+        </iteration>
+      </perform>
+    </rule>
+    <rule id="web-app-21">
+      <when>
+        <filecontent pattern="resteasy.language.mappings" filename="web.xml" />
+      </when>
+      <perform>
+        <iteration>
+          <hint title="RestEasy's language type mappings" effort="1"
+                severity="mandatory">
+            <message>
+              RESTEasy allows the user to map language file name suffixes like (.en, .fr)
+              to media types.  This mapping is declared in the application's
+              web.xml file.  Apache CXF supports this however the declaration uses
+              the param-name, jaxrs.extensions and uses a different format for param-value.
+              Refer to the document link for details
+
+            </message>
+            <link
+                href="http://cxf.apache.org/docs/jaxrs-services-configuration.html#JAXRSServicesConfiguration-ConfiguringJAX-RSservicesincontainerwithoutSpring"
+                title="Apache's jaxrs.extensions"/>
+            <link
+                href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/JAX-RS_Content_Negotiation.html"
+                title="RESTEasy's resteasy.media.type.mappings"/>
+          </hint>
+        </iteration>
+      </perform>
+    </rule>
+
   </rules>
 </ruleset>

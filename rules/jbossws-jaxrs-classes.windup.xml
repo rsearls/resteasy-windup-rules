@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<ruleset id="jaxrs-classes"
+         xmlns="http://windup.jboss.org/schema/jboss-ruleset"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://windup.jboss.org/schema/jboss-ruleset http://windup.jboss.org/schema/jboss-ruleset/windup-jboss-ruleset.xsd">
+
+    <metadata>
+        <description>
+            RestEasy specific classes usage search.
+        </description>
+    </metadata>
+
+
+    <rules id="jaxrs-classes-rules">
+
+        <rule id="resteasy-class-1">
+            <when>
+                <filecontent pattern="PostProcessInterceptor"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's PostProcessInterceptor" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using PostProcessInterceptor must be replaced
+                            by the JAX-RS 2.0 compliant interceptor facility.
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-class-2">
+            <when>
+                <filecontent pattern="PreProcessInterceptor"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's PreProcessInterceptor" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using PreProcessInterceptor must be replaced
+                            by the JAX-RS 2.0 compliant interceptor facility.
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-class-2">
+            <when>
+                <filecontent pattern="ClientExecutionInterceptor"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's ClientExecutionInterceptor" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using ClientExecutionInterceptor must be replaced
+                            by the JAX-RS 2.0 compliant interceptor facility.
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-class-3">
+            <when>
+                <filecontent pattern="MessageBodyWriterInterceptor"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's MessageBodyWriterInterceptor" effort="1"
+                          severity="mandatory">
+                        <message>
+                            MessageBodyWriterInterceptor interface wraps MessageBodyWriter invocations.
+                            Code using MessageBodyWriterInterceptor must be replaced
+                            by the JAX-RS 2.0 compliant interceptor facility.
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-class-4">
+            <when>
+                <filecontent pattern="MessageBodyReaderInterceptor"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's MessageBodyReaderInterceptor" effort="1"
+                          severity="mandatory">
+                        <message>
+                            MessageBodyReaderInterceptor interface wraps MessageBodyReader invocations.
+                            Code using MessageBodyReaderInterceptor must be replaced
+                            by the JAX-RS 2.0 compliant interceptor facility.
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-class-5">
+            <when>
+                <filecontent pattern="MessageBodyReaderContext"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's MessageBodyReaderContext" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using MessageBodyReaderContext must be replaced
+                            by the JAX-RS 2.0 compliant interceptor facility.
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-class-6">
+            <when>
+                <filecontent pattern="ClientExecutionContext"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's ClientExecutionContext" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using ClientExecutionContext must be replaced
+                            by the JAX-RS 2.0 compliant interceptor facility.
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-class-7">
+            <when>
+                <filecontent pattern="MessageBodyWriterContext"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's MessageBodyWriterContext" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using MessageBodyWriterContext must be replaced
+                            by the JAX-RS 2.0 compliant interceptor facility.
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-class-8">
+            <when>
+                <filecontent pattern="DecoratorProcessor"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's DecoratorProcessor" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using DecoratorProcessor must be replaced
+                            by the JAX-RS 2.0 compliant interceptor facility.
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-class-9">
+            <when>
+                <filecontent pattern="AcceptedByMethod"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's AcceptedByMethod" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using AcceptedByMethod must be replaced
+                            by the JAX-RS 2.0 compliant interceptor facility.
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+
+    </rules>
+</ruleset>
