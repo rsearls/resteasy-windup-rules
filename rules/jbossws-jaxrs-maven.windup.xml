@@ -187,6 +187,27 @@
         <lineitem message="Maven archive org.jboss.resteasy:resteasy-wadl found.  It must be replaced with org.jbossws:TO-BE-IDed." />
       </perform>      
     </rule>
-    
+
+    <!-- YAML support -->
+    <rule id="mvn_pom-config-20">
+      <when>
+        <project>
+          <artifact groupId="org.yaml" artifactId="snakeyaml"/>
+        </project>
+      </when>
+      <perform>
+        <lineitem message="Maven archive snakeyaml found.  TBD" />
+      </perform>
+    </rule>
+    <rule id="mvn_pom-config-21">
+      <when>
+        <project>
+          <artifact groupId="org.jboss.resteasy" artifactId="resteasy-yaml-provider"/>
+        </project>
+      </when>
+      <perform>
+        <lineitem message="Maven archive resteasy-yaml-provider found.  TBD" />
+      </perform>
+    </rule>
   </rules>
 </ruleset>

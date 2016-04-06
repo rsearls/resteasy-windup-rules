@@ -222,5 +222,140 @@
       </perform>
     </rule>
 
+
+    <!-- enable the Asynchronous Job Service -->
+    <rule id="web-app-22">
+      <when>
+        <filecontent pattern="resteasy.async.job.service.enabled" filename="web.xml" />
+      </when>
+      <perform>
+        <hint title="RestEasy Asynchronous Job Service setting" effort="1" severity="mandatory">
+          <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>
+    </rule>
+    <rule id="web-app-23">
+      <when>
+        <filecontent pattern="resteasy.async.job.service.max.job.results" filename="web.xml" />
+      </when>
+      <perform>
+        <hint title="RestEasy Asynchronous Job Service setting" effort="1" severity="mandatory">
+          <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>
+    </rule>
+    <rule id="web-app-24">
+      <when>
+        <filecontent pattern="resteasy.async.job.service.max.wait" filename="web.xml" />
+      </when>
+      <perform>
+        <hint title="RestEasy Asynchronous Job Service setting" effort="1" severity="mandatory">
+          <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>
+    </rule>
+    <rule id="web-app-25">
+      <when>
+        <filecontent pattern="resteasy.async.job.service.thread.pool.size" filename="web.xml" />
+      </when>
+      <perform>
+        <hint title="RestEasy Asynchronous Job Service setting" effort="1" severity="mandatory">
+          <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>
+    </rule>
+    <rule id="web-app-26">
+      <when>
+        <filecontent pattern="resteasy.async.job.service.base.path" filename="web.xml" />
+      </when>
+      <perform>
+        <hint title="RestEasy Asynchronous Job Service setting" effort="1" severity="mandatory">
+          <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>
+    </rule>
+    <rule id="web-app-27">
+      <when>
+        <filecontent pattern="org.jboss.resteasy.plugins.server.servlet.ResteasyBootstrap" filename="web.xml" />
+      </when>
+      <perform>
+        <hint title="RestEasy Asynchronous Job Service setting" effort="1" severity="mandatory">
+          <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>
+    </rule>
+    <rule id="web-app-28">
+      <when>
+        <filecontent pattern="resteasy.doseta.use.dns" filename="web.xml" />
+      </when>
+      <perform>
+        <hint title="RestEasy's DNS to discover public keys setting" effort="1" severity="mandatory">
+          <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>
+    </rule>
+    <rule id="web-app-29">
+      <when>
+        <filecontent pattern="esteasy.doseta.dns.uri" filename="web.xml" />
+      </when>
+      <perform>
+        <hint title="RestEasy's DNS to discover public keys setting" effort="1" severity="mandatory">
+          <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>
+    </rule>
+    <rule id="web-app-31">
+      <when>
+        <filecontent pattern="org.jboss.resteasy.plugins.guice.GuiceResteasyBootstrapServletContextListener" filename="web.xml" />
+      </when>
+      <perform>
+        <hint title="RestEasy's GuiceResteasyBootstrapServletContextListener setting" effort="1" severity="mandatory">
+          <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>
+    </rule>
+    <rule id="web-app-30">
+      <when>
+        <filecontent pattern="org.jboss.resteasy.cdi.CdiInjectorFactory" filename="web.xml" />
+      </when>
+      <perform>
+        <hint title="RestEasy's CdiInjectorFactory setting" effort="1" severity="mandatory">
+          <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>
+    </rule>
+    <rule id="web-app-31">
+      <when>
+        <filecontent pattern="resteasy.guice.stage" filename="web.xml" />
+      </when>
+      <perform>
+        <hint title="RestEasy's guice setting" effort="1" severity="mandatory">
+          <message><![CDATA[
+                TODO
+            ]]></message>
+        </hint>
+      </perform>
+    </rule>
+
   </rules>
 </ruleset>

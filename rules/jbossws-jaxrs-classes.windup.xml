@@ -266,5 +266,82 @@
             </perform>
         </rule>
 
+        <!-- YAML support -->
+        <rule id="resteasy-class-20">
+            <when>
+                <filecontent pattern="text/x-yaml"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's YAML header" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using YAML header must be replaced
+                            by the JAX-RS 2.0 compliant interceptor facility.
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-class-21">
+            <when>
+                <filecontent pattern="text/yaml"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's YAML header" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using YAML header must be replaced
+                            by the JAX-RS 2.0 compliant interceptor facility.
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-class-22">
+            <when>
+                <filecontent pattern="application/x-yaml"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's YAML header" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using YAML header must be replaced
+                            by the JAX-RS 2.0 compliant interceptor facility.
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+
     </rules>
 </ruleset>

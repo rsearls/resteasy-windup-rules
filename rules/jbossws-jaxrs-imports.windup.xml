@@ -1202,5 +1202,329 @@
           </perform>
       </rule>
 
+      <rule id="imp_import-2000">
+          <when>
+              <javaclass references="org.jboss.resteasy.security.doseta.DKIMSignature" />
+          </when>
+          <perform>
+              <iteration>
+                  <hint title="RestEasy's Signing API" effort="1"
+                        severity="mandatory">
+                      <message>
+                          This class should be replaced by the Apache CXF facility.
+                      </message>
+                      <!--
+                      <link
+                          href="http://cxf.apache.org/docs/jax-rs-data-bindings.html#JAX-RSDataBindings-Atom"
+                          title="Atom"/>
+                      <link
+                          href="https://docs.jboss.org/resteasy/docs/1.2.GA/userguide/html/Cache_NoCache_CacheControl.html"
+                          title="Cache Control"/>
+                      -->
+                  </hint>
+              </iteration>
+          </perform>
+      </rule>
+      <rule id="imp_import-2001">
+          <when>
+              <javaclass references="org.jboss.resteasy.annotations.security.doseta.Signed" />
+          </when>
+          <perform>
+              <iteration>
+                  <hint title="RestEasy's Signing annotation" effort="1"
+                        severity="mandatory">
+                      <message>
+                          This class should be replaced by the Apache CXF facility.
+                      </message>
+                      <!--
+                      <link
+                          href="http://cxf.apache.org/docs/jax-rs-data-bindings.html#JAX-RSDataBindings-Atom"
+                          title="Atom"/>
+                      <link
+                          href="https://docs.jboss.org/resteasy/docs/1.2.GA/userguide/html/Cache_NoCache_CacheControl.html"
+                          title="Cache Control"/>
+                      -->
+                  </hint>
+              </iteration>
+          </perform>
+      </rule>
+
+      <rule id="imp_import-2002">
+          <when>
+              <javaclass references="org.jboss.resteasy.spi.MarshalledEntity" />
+          </when>
+          <perform>
+              <iteration>
+                  <hint title="RestEasy's MarshalledEntity" effort="1"
+                        severity="mandatory">
+                      <message>
+                          This class should be replaced by the Apache CXF facility.
+                      </message>
+                      <!--
+                      <link
+                          href="http://cxf.apache.org/docs/jax-rs-data-bindings.html#JAX-RSDataBindings-Atom"
+                          title="Atom"/>
+                      <link
+                          href="https://docs.jboss.org/resteasy/docs/1.2.GA/userguide/html/Cache_NoCache_CacheControl.html"
+                          title="Cache Control"/>
+                      -->
+                  </hint>
+              </iteration>
+          </perform>
+      </rule>
+      <rule id="imp_import-2003">
+          <when>
+              <javaclass references="org.jboss.resteasy.annotations.security.doseta.Verify" />
+          </when>
+          <perform>
+              <iteration>
+                  <hint title="RestEasy's Verify annotation" effort="1"
+                        severity="mandatory">
+                      <message>
+                          This class should be replaced by the Apache CXF facility.
+                      </message>
+                      <!--
+                      <link
+                          href="http://cxf.apache.org/docs/jax-rs-data-bindings.html#JAX-RSDataBindings-Atom"
+                          title="Atom"/>
+                      <link
+                          href="https://docs.jboss.org/resteasy/docs/1.2.GA/userguide/html/Cache_NoCache_CacheControl.html"
+                          title="Cache Control"/>
+                      -->
+                  </hint>
+              </iteration>
+          </perform>
+      </rule>
+      <rule id="imp_import-2005">
+          <when>
+              <javaclass references="org.jboss.resteasy.security.doseta.UnauthorizedSignatureException" />
+          </when>
+          <perform>
+              <iteration>
+                  <hint title="RestEasy's UnauthorizedSignatureException" effort="1"
+                        severity="mandatory">
+                      <message>
+                          This class should be replaced by the Apache CXF facility.
+                      </message>
+                      <!--
+                      <link
+                          href="http://cxf.apache.org/docs/jax-rs-data-bindings.html#JAX-RSDataBindings-Atom"
+                          title="Atom"/>
+                      <link
+                          href="https://docs.jboss.org/resteasy/docs/1.2.GA/userguide/html/Cache_NoCache_CacheControl.html"
+                          title="Cache Control"/>
+                      -->
+                  </hint>
+              </iteration>
+          </perform>
+      </rule>
+      <rule id="imp_import-2006">
+          <when>
+              <javaclass references="org.jboss.resteasy.security.doseta.KeyRepository" />
+          </when>
+          <perform>
+              <iteration>
+                  <hint title="RestEasy's KeyRepository" effort="1"
+                        severity="mandatory">
+                      <message>
+                          This class should be replaced by the Apache CXF facility.
+                      </message>
+                      <!--
+                      <link
+                          href="http://cxf.apache.org/docs/jax-rs-data-bindings.html#JAX-RSDataBindings-Atom"
+                          title="Atom"/>
+                      <link
+                          href="https://docs.jboss.org/resteasy/docs/1.2.GA/userguide/html/Cache_NoCache_CacheControl.html"
+                          title="Cache Control"/>
+                      -->
+                  </hint>
+              </iteration>
+          </perform>
+      </rule>
+      <rule id="imp_import-2007">
+          <when>
+              <javaclass references="org.jboss.resteasy.security.doseta.ConfiguredDosetaKeyRepository" />
+          </when>
+          <perform>
+              <iteration>
+                  <hint title="RestEasy's ConfiguredDosetaKeyRepository" effort="1"
+                        severity="mandatory">
+                      <message>
+                          This class should be replaced by the Apache CXF facility.
+                      </message>
+                      <!--
+                      <link
+                          href="http://cxf.apache.org/docs/jax-rs-data-bindings.html#JAX-RSDataBindings-Atom"
+                          title="Atom"/>
+                      <link
+                          href="https://docs.jboss.org/resteasy/docs/1.2.GA/userguide/html/Cache_NoCache_CacheControl.html"
+                          title="Cache Control"/>
+                      -->
+                  </hint>
+              </iteration>
+          </perform>
+      </rule>
+      <rule id="imp_import-2008">
+          <when>
+              <javaclass references="org.jboss.resteasy.security.smime.EnvelopedOutput" />
+          </when>
+          <perform>
+              <iteration>
+                  <hint title="RestEasy's SMIME EnvelopedOutput" effort="1"
+                        severity="mandatory">
+                      <message>
+                          This class should be replaced by the Apache CXF facility.
+                      </message>
+                      <!--
+                      <link
+                          href="http://cxf.apache.org/docs/jax-rs-data-bindings.html#JAX-RSDataBindings-Atom"
+                          title="Atom"/>
+                      <link
+                          href="https://docs.jboss.org/resteasy/docs/1.2.GA/userguide/html/Cache_NoCache_CacheControl.html"
+                          title="Cache Control"/>
+                      -->
+                  </hint>
+              </iteration>
+          </perform>
+      </rule>
+      <rule id="imp_import-2009">
+          <when>
+              <javaclass references="org.jboss.resteasy.security.smime.EnvelopedInput" />
+          </when>
+          <perform>
+              <iteration>
+                  <hint title="RestEasy's SMIME EnvelopedInput" effort="1"
+                        severity="mandatory">
+                      <message>
+                          This class should be replaced by the Apache CXF facility.
+                      </message>
+                      <!--
+                      <link
+                          href="http://cxf.apache.org/docs/jax-rs-data-bindings.html#JAX-RSDataBindings-Atom"
+                          title="Atom"/>
+                      <link
+                          href="https://docs.jboss.org/resteasy/docs/1.2.GA/userguide/html/Cache_NoCache_CacheControl.html"
+                          title="Cache Control"/>
+                      -->
+                  </hint>
+              </iteration>
+          </perform>
+      </rule>
+      <rule id="imp_import-2010">
+          <when>
+              <javaclass references="org.jboss.resteasy.security.smime.SignedOutput" />
+          </when>
+          <perform>
+              <iteration>
+                  <hint title="RestEasy's SMIME SignedOutput" effort="1"
+                        severity="mandatory">
+                      <message>
+                          This class should be replaced by the Apache CXF facility.
+                      </message>
+                      <!--
+                      <link
+                          href="http://cxf.apache.org/docs/jax-rs-data-bindings.html#JAX-RSDataBindings-Atom"
+                          title="Atom"/>
+                      <link
+                          href="https://docs.jboss.org/resteasy/docs/1.2.GA/userguide/html/Cache_NoCache_CacheControl.html"
+                          title="Cache Control"/>
+                      -->
+                  </hint>
+              </iteration>
+          </perform>
+      </rule>
+      <rule id="imp_import-2012">
+          <when>
+              <javaclass references="org.jboss.resteasy.spi.ResteasyDeployment" />
+          </when>
+          <perform>
+              <iteration>
+                  <hint title="RestEasy's ResteasyDeployment" effort="1"
+                        severity="mandatory">
+                      <message>
+                          This class should be replaced by the Apache CXF facility.
+                      </message>
+                      <!--
+                      <link
+                          href="http://cxf.apache.org/docs/jax-rs-data-bindings.html#JAX-RSDataBindings-Atom"
+                          title="Atom"/>
+                      <link
+                          href="https://docs.jboss.org/resteasy/docs/1.2.GA/userguide/html/Cache_NoCache_CacheControl.html"
+                          title="Cache Control"/>
+                      -->
+                  </hint>
+              </iteration>
+          </perform>
+      </rule>
+      <rule id="imp_import-2013">
+          <when>
+              <javaclass references="org.jboss.resteasy.plugins.guice.RequestScoped" />
+          </when>
+          <perform>
+              <iteration>
+                  <hint title="RestEasy's RequestScoped" effort="1"
+                        severity="mandatory">
+                      <message>
+                          This class should be replaced by the Apache CXF facility.
+                      </message>
+                      <!--
+                      <link
+                          href="http://cxf.apache.org/docs/jax-rs-data-bindings.html#JAX-RSDataBindings-Atom"
+                          title="Atom"/>
+                      <link
+                          href="https://docs.jboss.org/resteasy/docs/1.2.GA/userguide/html/Cache_NoCache_CacheControl.html"
+                          title="Cache Control"/>
+                      -->
+                  </hint>
+              </iteration>
+          </perform>
+      </rule>
+      <rule id="imp_import-2014">
+          <when>
+              <javaclass references="org.jboss.resteasy.client.jaxrs.ClientHttpEngine" />
+          </when>
+          <perform>
+              <iteration>
+                  <hint title="RestEasy's ClientHttpEngine" effort="1"
+                        severity="mandatory">
+                      <message>
+                          This class should be replaced by the Apache CXF facility.
+                      </message>
+                      <!--
+                      <link
+                          href="http://cxf.apache.org/docs/jax-rs-data-bindings.html#JAX-RSDataBindings-Atom"
+                          title="Atom"/>
+                      <link
+                          href="https://docs.jboss.org/resteasy/docs/1.2.GA/userguide/html/Cache_NoCache_CacheControl.html"
+                          title="Cache Control"/>
+                      -->
+                  </hint>
+              </iteration>
+          </perform>
+      </rule>
+      <rule id="imp_import-2015">
+          <when>
+              <javaclass references="org.jboss.resteasy.client.jaxrs.engines.ApacheHttpClient4Engine" />
+          </when>
+          <perform>
+              <iteration>
+                  <hint title="RestEasy's ApacheHttpClient4Engine" effort="1"
+                        severity="mandatory">
+                      <message>
+                          This class should be replaced by the Apache CXF facility.
+                      </message>
+                      <!--
+                      <link
+                          href="http://cxf.apache.org/docs/jax-rs-data-bindings.html#JAX-RSDataBindings-Atom"
+                          title="Atom"/>
+                      <link
+                          href="https://docs.jboss.org/resteasy/docs/1.2.GA/userguide/html/Cache_NoCache_CacheControl.html"
+                          title="Cache Control"/>
+                      -->
+                  </hint>
+              </iteration>
+          </perform>
+      </rule>
+
   </rules>
 </ruleset>

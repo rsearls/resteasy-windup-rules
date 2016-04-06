@@ -802,5 +802,102 @@
             </perform>
         </rule>
 
+        <rule id="resteasy-ann-39">
+            <when>
+                <filecontent pattern="@Signed"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @Signed annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @Signed must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-40">
+            <when>
+                <filecontent pattern="@Verifications"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @Verifications annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @Verifications must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-41">
+            <when>
+                <filecontent pattern="@Verify"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @Verify annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @Verify must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+        <rule id="resteasy-ann-42">
+            <when>
+                <filecontent pattern="@RequestScoped"/>
+            </when>
+
+            <perform>
+                <iteration>
+                    <hint title="RestEasy's @RequestScoped annotation" effort="1"
+                          severity="mandatory">
+                        <message>
+                            Code using annotion @RequestScoped must be removed. TBD
+                        </message>
+                        <!--
+                        <link
+                            href="http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Parameterbeans"
+                            title="Parameter Beans"/>
+                        <link
+                            href="http://docs.jboss.org/resteasy/docs/3.0.13.Final/userguide/html/_Form.html"
+                            title="Form annotation"/>
+                        -->
+                    </hint>
+                </iteration>
+            </perform>
+        </rule>
+
     </rules>
 </ruleset>
