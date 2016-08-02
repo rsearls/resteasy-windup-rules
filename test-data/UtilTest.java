@@ -1,51 +1,5 @@
 
-import org.jboss.resteasy.util.IsAssignableFrom;
-import org.jboss.resteasy.util.HeaderHelper;
-import org.jboss.resteasy.util.StringToPrimitive;
-import org.jboss.resteasy.util.Encode;
-import org.jboss.resteasy.util.CookieParser;
-import org.jboss.resteasy.util.Base64;
-import org.jboss.resteasy.util.NoContentInputStreamDelegate;
-import org.jboss.resteasy.util.LocaleHelper;
-import org.jboss.resteasy.util.MediaTypeMatcher;
-import org.jboss.resteasy.util.IsHttpMethod;
-import org.jboss.resteasy.util.MethodHashing;
-import org.jboss.resteasy.util.ThreadLocalStack;
-import org.jboss.resteasy.util.HeaderParameterParser;
-import org.jboss.resteasy.util.BasicAuthHelper;
-import org.jboss.resteasy.util.TypeConverter;
-import org.jboss.resteasy.util.HttpResponseCodes;
-import org.jboss.resteasy.util.NoContent;
-import org.jboss.resteasy.util.DelegatingMultivaluedMap;
-import org.jboss.resteasy.util.HttpHeaderNames;
-import org.jboss.resteasy.util.PrefixedMultivaluedMap;
-import org.jboss.resteasy.util.GetRestful;
-import org.jboss.resteasy.util.FindAnnotation;
-import org.jboss.resteasy.util.FeatureContextDelegate;
-import org.jboss.resteasy.util.PrefixedFormFieldsHttpRequest;
-import org.jboss.resteasy.util.ParameterParser;
-import org.jboss.resteasy.util.Types;
-import org.jboss.resteasy.util.URLUtils;
-import org.jboss.resteasy.util.WeightedMediaType;
-import org.jboss.resteasy.util.DateUtil;
-import org.jboss.resteasy.util.DelegatingHttpRequest;
-import org.jboss.resteasy.util.Hex;
-import org.jboss.resteasy.util.InputStreamToByteArray;
-import org.jboss.resteasy.util.GroupParameterParser;
-import org.jboss.resteasy.util.CommitHeaderOutputStream;
-import org.jboss.resteasy.util.HttpServletRequestDelegate;
-import org.jboss.resteasy.util.PickConstructor;
-import org.jboss.resteasy.util.WeightedLanguage;
 import org.jboss.resteasy.util.GenericType;
-import org.jboss.resteasy.util.MediaTypeHelper;
-import org.jboss.resteasy.util.DelegatingOutputStream;
-import org.jboss.resteasy.util.AcceptParser;
-import org.jboss.resteasy.util.CaseInsensitiveMap;
-import org.jboss.resteasy.util.PathHelper;
-import org.jboss.resteasy.util.StringContextReplacement;
-import org.jboss.resteasy.util.AnnotationResolver;
-import org.jboss.resteasy.util.ReadFromStream;
-import org.jboss.resteasy.util.HttpClient4xUtils;
 
 public class UtilTest {
 }
